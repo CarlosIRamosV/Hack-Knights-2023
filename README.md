@@ -20,8 +20,9 @@
 </p>
 
 ## Team Members
-* [**Luis Alvidrez**](https://github.com/luisalvidrez3)
-* [**Daniel Gonzalez**](https://github.com/DanielAlejandroGonzalezGutierrez)
-* [**Carlos Ramos**](https://github.com/CarlosIRamosV)
-* [**Diego Sandoval**](https://github.com/DiegoSandovalB)
-* [**Manuel Urquidi**](https://github.com/urquidima)
+
+- [**Luis Alvidrez**](https://github.com/luisalvidrez3)
+- [**Daniel Gonzalez**](https://github.com/DanielAlejandroGonzalezGutierrez)
+- [**Carlos Ramos**](https://github.com/CarlosIRamosV)
+- [**Diego Sandoval**](https://github.com/DiegoSandovalB)
+- [**Manuel Urquidi**](https://github.com/urquidima)

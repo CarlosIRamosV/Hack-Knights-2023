@@ -14,7 +14,6 @@
 
 [Canva](https://www.canva.com/) is a graphic design platform that allows users to create social media graphics, presentations, posters, documents and other visual content.
 
-
 ## Libraries
 
 ### Next.js

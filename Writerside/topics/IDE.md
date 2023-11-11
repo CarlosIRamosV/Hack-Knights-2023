@@ -6,7 +6,8 @@ Use the following link to download the IDE: [Toolbox App](https://www.jetbrains.
 
 ## Installation
 
-## Toolbox App (recommended)
+### Toolbox App (recommended)
+
 1. Download the latest version of [Toolbox App](https://www.jetbrains.com/toolbox-app/).
 2. Run the installer and follow the steps.
 3. Open the Toolbox App and search for IntelliJ IDEA Ultimate.
@@ -16,7 +17,8 @@ Use the following link to download the IDE: [Toolbox App](https://www.jetbrains.
 7. Find the plugins you want to install and click on Install.
 8. Restart the IDE.
 
-## IntelliJ IDEA
+### IntelliJ IDEA
+
 1. Download the latest version of [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
 2. Run the installer and follow the steps.
 3. Open the IDE and follow the steps of the configuration wizard.
@@ -25,4 +27,5 @@ Use the following link to download the IDE: [Toolbox App](https://www.jetbrains.
 6. Restart the IDE.
 
 ## Plugins
+
 - [Writerside](https://plugins.jetbrains.com/plugin/17077-writerside) A plugin that allows you to write and preview markdown files in real time.
