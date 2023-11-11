@@ -5,7 +5,7 @@ background-color: #83A2FF;
 
   .search input[type=text] {
     padding: 12px;
-    border: 40px;
+    border: 20px;
     margin-top: 16px;
     margin-right: 32px;
     font-size: 34px;
@@ -21,8 +21,8 @@ background-color: #83A2FF;
     align-items: flex-end;
     
   }
- .search:focus{
-    border-color: pink;
+ .search input[type=text]:focus{
+    outline: none;
  }
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
