@@ -60,7 +60,7 @@
    ```bash
    clip < ~/.ssh/id_ed25519.pub
    ```
-2. Go to [GitHub](https://github.com/settings/keys) and add the SSH key to your account.
+2. Go to [GitHub](https://github.com/settings/keys) and add the SSH key to your providers.
 3. Open Git Bash and run the following command:
    ```bash
    ssh -T git@github.com

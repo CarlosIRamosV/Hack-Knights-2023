@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Account from "./Providers";
 import "./globals.css";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Account>{children}</Account>
+      </body>
     </html>
   );
 }

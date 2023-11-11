@@ -5,6 +5,7 @@ use serde::{Deserialize, Serialize};
 struct Info {
     name: String,
 }
+
 #[derive(Deserialize)]
 struct User {
     name: String,
