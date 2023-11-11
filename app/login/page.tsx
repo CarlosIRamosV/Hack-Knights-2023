@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -88,15 +87,3 @@ export default function Login() {
         </main>
   )
 }
-=======
-export default function Login() {
-    return (
-      <main>
-        <form action="post">
-            
-        </form>
-      </main>
-    )
-  }
-  
->>>>>>> origin/main
