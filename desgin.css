@@ -1,5 +1,5 @@
 body{
-background-color: #83A2FF;
+background-color: #c2c0c0 ;
 }
 
 
@@ -10,7 +10,8 @@ background-color: #83A2FF;
     margin-right: 32px;
     font-size: 34px;
     border-radius: 25px;
-    background-color: #b5c2e7;
+    background-color: #3636c8;
+   
    
    
     
@@ -40,15 +41,42 @@ background-color: #83A2FF;
       border: 1px solid #ccc;
     }
   }
-#hiddenTable{
-  display: none;
+  label{
+    padding: 6px;
+    border: 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 15px;
+    background-color: #3636c8;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  select{
+    border: none;
+    background-color: #3636c8;
+
+    padding: 0 10px;
+    font-size: 22px;
+    border-radius: 15px;
 }
-#toggleGenero{
-  padding: 12px;
-  border: 20px;
-  margin-top: 16px;
-  margin-right: 32px;
-  font-size: 34px;
-  border-radius: 25px;
-  background-color: #b5c2e7;
+select option{
+  background: #3636c8;
+    padding: 0 10px;
+    border-radius: 15px;
+}
+#selectedGenre{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#selectedIns1{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#selectedIns2{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#selectedFeeling{
+  font-family: Arial, Helvetica, sans-serif;
+
 }
