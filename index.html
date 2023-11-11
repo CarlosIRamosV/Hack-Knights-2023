@@ -12,26 +12,90 @@
        
         <input type="text" placeholder="Search..">
       </div>
-      <div><button id="toggleButton">Genero</button>
+      <div>
+      <label for="Genero">Genero:</label>
+<select id="Genero">
+  <option value="Banda">Banda</option>
+  <option value="Rock">Rock</option>
+  <option value="Pop">Pop</option>
+  <!-- Add more options as needed -->
+</select>
 
-        <table id="hiddenTable">
-          <thead>
-            <tr>
-              <th>Jazz</th>
-              <th>Rock</th>
-              <th>Pop</th>
-            </tr>
-          </thead>
-        
-        </table></div>
+<!-- Optional: Display the selected value -->
+<p id="selectedGenre"></p>
 
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script>
-          $(document).ready(function(){
-            $("#toggleButton").click(function(){
-              $("#hiddenTable").slideToggle();
-            });
-          });
-        </script>
+<script>
+  // JavaScript code to handle the selected value
+  document.getElementById("Genero").addEventListener("change", function() {
+    var selectedGenre = document.getElementById("Genero").value;
+    document.getElementById("selectedGenre").innerHTML = "Genero Seleccionado: " + selectedGenre;
+  });
+</script>
+</div>
+<div>
+    <label for="Ins1">Instrumento 1:</label>
+<select id="Ins1">
+<option value="Guitarra">Guitarra</option>
+<option value="Bateria">Bateria</option>
+<option value="Bajo">Bajo</option>
+<!-- Add more options as needed -->
+</select>
+
+<!-- Optional: Display the selected value -->
+<p id="selectedIns1"></p>
+
+<script>
+// JavaScript code to handle the selected value
+document.getElementById("Ins1").addEventListener("change", function() {
+  var selectedIns1 = document.getElementById("Ins1").value;
+  document.getElementById("selectedIns1").innerHTML = "Primer instrumento seleccionado: " + selectedIns1;
+});
+</script>
+</div>
+<div>
+    <label for="Ins2">Instrumento 2:</label>
+<select id="Ins2">
+<option value="Guitarra">Guitarra</option>
+<option value="Bateria">Bateria</option>
+<option value="Bajo">Bajo</option>
+<!-- Add more options as needed -->
+</select>
+
+<!-- Optional: Display the selected value -->
+<p id="selectedIns2"></p>
+
+<script>
+// JavaScript code to handle the selected value
+document.getElementById("Ins2").addEventListener("change", function() {
+  var selectedIns2 = document.getElementById("Ins2").value;
+  document.getElementById("selectedIns2").innerHTML = "Segundo instrumento seleccionado: " + selectedIns2;
+});
+</script>
+</div>
+
+<div class="slidecontainer">
+    <label for="slidecontainer">BPM</label>
+    <input type="range" min="0" max="300" value="150" class="slider" id="myRange">
+  </div>
+<div>
+    <label for="Sentimiento">Sentimiento:</label>
+<select id="Sentimiento">
+<option value="Happy">Happy</option>
+<option value="Sad">Sad</option>
+<option value="Hopeful">Hopeful</option>
+<!-- Add more options as needed -->
+</select>
+
+<!-- Optional: Display the selected value -->
+<p id="selectedFeeling"></p>
+
+<script>
+// JavaScript code to handle the selected value
+document.getElementById("Sentimiento").addEventListener("change", function() {
+  var selectedFeeling = document.getElementById("Sentimiento").value;
+  document.getElementById("selectedFeeling").innerHTML = "Sentimiento Seleccionado: " + selectedFeeling;
+});
+</script>
+</div>
 </body>
 </html>
