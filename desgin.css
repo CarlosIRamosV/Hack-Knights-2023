@@ -11,6 +11,7 @@ background-color: #c2c0c0 ;
     font-size: 34px;
     border-radius: 25px;
     background-color: #3636c8;
+    color: #c2c0c0;
    
    
    
@@ -20,12 +21,18 @@ background-color: #c2c0c0 ;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #c2c0c0;
 
     
   }
  .search input[type=text]:focus{
     outline: none;
+    color: #c2c0c0;
  }
+ .search input[type=text]::placeholder{
+  outline: none;
+  color: #c2c0c0;
+}
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
   @media screen and (max-width: 600px) {
@@ -42,6 +49,7 @@ background-color: #c2c0c0 ;
     }
   }
   label{
+    color: #c2c0c0;
     padding: 6px;
     border: 10px;
     margin-top: 8px;
@@ -54,29 +62,34 @@ background-color: #c2c0c0 ;
   select{
     border: none;
     background-color: #3636c8;
-
+    color: #c2c0c0;
     padding: 0 10px;
     font-size: 22px;
     border-radius: 15px;
 }
 select option{
+  color: #c2c0c0;
   background: #3636c8;
     padding: 0 10px;
     border-radius: 15px;
 }
 #selectedGenre{
+  color: #c2c0c0;
   font-family: Arial, Helvetica, sans-serif;
 
 }
 #selectedIns1{
+  color: #c2c0c0;
   font-family: Arial, Helvetica, sans-serif;
 
 }
 #selectedIns2{
+  color: #c2c0c0;
   font-family: Arial, Helvetica, sans-serif;
 
 }
 #selectedFeeling{
+  color: #c2c0c0;
   font-family: Arial, Helvetica, sans-serif;
 
 }
