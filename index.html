@@ -12,5 +12,26 @@
        
         <input type="text" placeholder="Search..">
       </div>
+      <div><button id="toggleButton">Genero</button>
+
+        <table id="hiddenTable">
+          <thead>
+            <tr>
+              <th>Jazz</th>
+              <th>Rock</th>
+              <th>Pop</th>
+            </tr>
+          </thead>
+        
+        </table></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            $("#toggleButton").click(function(){
+              $("#hiddenTable").slideToggle();
+            });
+          });
+        </script>
 </body>
 </html>

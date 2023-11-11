@@ -18,7 +18,8 @@ background-color: #83A2FF;
   .search{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+
     
   }
  .search input[type=text]:focus{
@@ -39,3 +40,15 @@ background-color: #83A2FF;
       border: 1px solid #ccc;
     }
   }
+#hiddenTable{
+  display: none;
+}
+#toggleButton{
+  padding: 12px;
+  border: 20px;
+  margin-top: 16px;
+  margin-right: 32px;
+  font-size: 34px;
+  border-radius: 25px;
+  background-color: #b5c2e7;
+}
