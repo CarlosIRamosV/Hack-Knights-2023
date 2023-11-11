@@ -1,0 +1,61 @@
+name: Build documentation
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+  pages: write
+
+env:
+  DOCKER_VERSION: 2.1.1479-p3869
+
+jobs:
+  app:
+    name: Build APP documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Writerside docs using Docker
+        uses: JetBrains/writerside-github-action@v4
+        with:
+          instance: Writerside/app
+          artifact: webHelpAPP2-all.zip
+          docker-version: ${{ env.DOCKER_VERSION }}
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: artifacts/webHelpAPP2-all.zip
+          retention-days: 7
+
+  deploy:
+    name: Deploy documentation
+    environment:
+      name: docs
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: [app]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+
+      - name: Unzip artifacts
+        run: unzip artifact/webHelpAPP2-all.zip -d dir
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: dir
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
