@@ -76,6 +76,17 @@ document.getElementById("Ins2").addEventListener("change", function() {
 <div class="slidecontainer">
     <label for="slidecontainer">BPM</label>
     <input type="range" min="0" max="300" value="150" class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p>
+    <script>
+        
+        var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+        </script>
   </div>
 <div>
     <label for="Sentimiento">Sentimiento:</label>

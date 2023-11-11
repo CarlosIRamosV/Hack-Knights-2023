@@ -80,22 +80,33 @@ background: #3636c8;
   border-radius: 15px;
 }
 #selectedGenre{
-color: #c2c0c0;
+color: #3636c8;
 font-family: Arial, Helvetica, sans-serif;
 
 }
 #selectedIns1{
-color: #c2c0c0;
+color: #3636c8;
 font-family: Arial, Helvetica, sans-serif;
 
 }
 #selectedIns2{
-color: #c2c0c0;
+color: #3636c8;
 font-family: Arial, Helvetica, sans-serif;
 
 }
 #selectedFeeling{
-color: #c2c0c0;
+color: #3636c8;
 font-family: Arial, Helvetica, sans-serif;
 
+}
+div{
+  padding: 2%;
+}
+#demo{
+  color: #3636c8;
+font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  color: #3636c8;
+  font-family: Arial, Helvetica, sans-serif;
 }
