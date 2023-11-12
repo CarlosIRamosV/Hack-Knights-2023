@@ -63,7 +63,7 @@ $conn->close();
 
         <br>
 
-        <label for="input1">Correo:</label>
+        <label for="input3">Correo:</label>
         <input type="email" id="input3" name="input3" required>
         <br>
 
